@@ -1,0 +1,23 @@
+ui_print("");
+ui_print("Installing OnePlusOSS codeaurora Snapdragon Camera");
+ui_print("");
+ui_print("build and packaged by Nvertigo");
+ui_print("");
+
+ui_print("mounting system");
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("copying apk and libs");
+ui_print("");
+package_extract_dir("system", "/system");
+ui_print("");
+ui_print("setting filesystem permissions");
+ui_print("");
+set_perm_recursive(0, 0, 0755, 0644, "/system/app/SnapdragonCamera");
+set_perm(0, 0, 0644, "system/lib/libjni_snapcammosaic.so");
+set_perm(0, 0, 0644, "system/lib/libjni_snapcamtinyplanet.so");
+set_perm(0, 0, 0644, "system/lib64/libjni_snapcammosaic.so");
+set_perm(0, 0, 0644, "system/lib64/libjni_snapcamtinyplanet.so");
+ui_print("");
+ui_print("unmounting system");
+ui_print("");
+ui_print("");

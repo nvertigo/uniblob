@@ -4,7 +4,7 @@ ui_print("for compatibility of Nvertigo's 3t-optimized builds");
 ui_print("with kernels expecting the altered filenames");
 ui_print("WARNING: DON'T REPORT ANY ISSUES AFTER USING THIS ZIP!");
 ui_print("Before reporting bugs, do a clean flash.");
-ui_print("Version: 4.1.0");
+ui_print("Version: OpenBeta 4");
 ui_print("");
 ui_print("build and packaged by Nvertigo");
 ui_print("");
